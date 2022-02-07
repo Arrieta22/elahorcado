@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Logo JA Transparente.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hangman Game</title>
+</head>
+<body>
+    <header>
+        <img class="logoJA" src="img/Logo JA Transparente.png" alt="">
+        <h1 class="encabezado">Hangman Game</h1>
+    </header>
+    <div id="juego">
+        <div id="opciones">
+            <li id="reiniciarJuego">Reiniciar el juego</li>
+            <li id="agregarPalabra">Agregar palabra</li>
+        </div>
+        <p>Seleccione una categoría</p>
+        <div id="categorias">
+            <li id="animales" name="categoria">Animales</li>
+            <li id="automoviles" name="categoria">Automoviles</li>
+            <li id="frutas" name="categoria">Frutas</li>
+            <li id="programacion" name="categoria">Programación</li>
+            <li id="redesSociales" name="categoria">Redes Sociales</li>
+            <li id="agregadas" name="categoria">Agregadas</li>
+        </div>
+        <canvas id="lienzo" width="800" height="500">
+            No soporta canvas
+        </canvas>
+        <div id="keyboard">
+            <script src="js/keyboard.js"></script>
+        </div>
+        <div id="popUp">
+            <div id="ganador" class="ganador"></div>
+            <div id="perdedor" class="perdedor"></div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/palabras.js"></script>
+    <script src="js/canvas.js"></script>
+</body>
+<footer>
+        <p>Desarrollado por: José Arrieta</p>
+        <div class="iconos">
+            <a href="https://www.facebook.com/Arrieta22" target="_blank" title="Contactar por Facebook">
+                <img class="icono" src="img/facebook.png" alt="Facebook" />
+            </a>
+            <a href="https://www.instagram.com/arrieta_22/" target="_blank" title="Contactar por Instagram">
+                <img class="icono" src="img/instagram.png" alt="Instagram" />
+            </a>
+            <a href="https://twitter.com/arrieta_22" target="_blank" title="Contactar por Twitter">
+                <img class="icono" src="img/twitter.png" alt="Twitter" />
+            </a>
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                target="_blank" title="Contactar por LinkedIn">
+                <img class="icono" src="img/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a href="https://discord.com/channels/Arrieta22#3780" target="_blank" title="Contactar por Discord">
+                <img class="icono" src="img/discord.png" alt="Discord" />
+            </a>
+            <a href="https://github.com/Arrieta22" target="_blank" title="Contactar por GitHub">
+                <img class="icono" src="img/github.png" alt="GitHub" />
+            </a>
+        </div>
+</footer>
+</html>
