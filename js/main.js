@@ -19,9 +19,11 @@ function reinicarJuego(){
 //---------------- Botón para agregar una palabra nueva -----------------------//
 botonAgregarPalabra.addEventListener("click", function agregarPalabra(){
     let preguntaAgregar = prompt("La palabra se agregará en la categoria \"Agregadas\"","");
-    if (preguntaAgregar != null || preguntaAgregar != ""){
+    if (preguntaAgregar == null || preguntaAgregar == "" || preguntaAgregar == " " || Number(preguntaAgregar)){
+        alert("No se pudo agregar la palabra")
+    }else{
         agregadas.push(preguntaAgregar);
-    }
+    };
 });
 
 //---------------- Genera un PopUp de Ganador -----------------------//
